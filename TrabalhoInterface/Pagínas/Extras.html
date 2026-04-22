@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário - Velozes e Furiosos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .radio-group {
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .media {
+      margin: 15px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<form>
+  <h2>🎬 Formulário - Velozes e Furiosos</h2>
+
+  <!-- Vídeo -->
+  <div class="media">
+    <h3>Assista ao trailer:</h3>
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/2TAOizOnNPo"
+      title="Trailer Velozes e Furiosos"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Áudio -->
+  <div class="media">
+    <h3>Ouça a trilha sonora:</h3>
+    <audio controls>
+      <source src="../Audíos/Tokyo Drift - Teriyaki Boyz [ MUSIC VIDEO ] HD.mp3" type="audio">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+
+  <label>Nome:</label>
+  <input type="text" name="nome" required>
+
+  <label>Idade:</label>
+  <input type="number" name="idade" required>
+
+  <label>Já assistiu ao filme?</label>
+  <div class="radio-group">
+    <input type="radio" name="assistiu" value="sim"> Sim
+    <input type="radio" name="assistiu" value="nao"> Não
+  </div>
+
+  <label>Qual filme da franquia você assistiu?</label>
+  <input type="text" name="filme">
+
+  <label>Personagem favorito:</label>
+  <input type="text" name="personagem">
+
+  <label>O que você mais gostou?</label>
+  <select name="gostou">
+    <option>Corridas</option>
+    <option>Ação</option>
+    <option>Personagens</option>
+    <option>História</option>
+    <option>Outros</option>
+  </select>
+
+  <label>Como você avalia o filme?</label>
+  <div class="radio-group">
+    <input type="radio" name="avaliacao" value="otimo"> Ótimo
+    <input type="radio" name="avaliacao" value="bom"> Bom
+    <input type="radio" name="avaliacao" value="regular"> Regular
+    <input type="radio" name="avaliacao" value="ruim"> Ruim
+  </div>
+
+  <label>Nota (0 a 10):</label>
+  <input type="number" name="nota" min="0" max="10">
+
+  <label>Cena mais marcante:</label>
+  <textarea name="cena"></textarea>
+
+  <label>Recomendaria o filme? Por quê?</label>
+  <textarea name="recomendacao"></textarea>
+
+  <label>Se participasse do filme, qual papel teria?</label>
+  <textarea name="papel"></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>

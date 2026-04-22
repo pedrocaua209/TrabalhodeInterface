@@ -1,0 +1,49 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    text-align: justify;
+}
+
+nav {
+    background: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.banner {
+    height: 250px;
+    background: gray;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+fieldset {
+    border: 2px solid orange;
+}
+a {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: rgb(235, 235, 247);
+}
